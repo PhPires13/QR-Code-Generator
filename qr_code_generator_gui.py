@@ -25,6 +25,7 @@ class QRCodeGeneratorGUI:
         input_bg_color = '#7A7A7A'
         input_fg_color = 'white'
         button_bg_color = '#008000'
+        remove_button_bg_color = '#FF0000'
 
         # Create the window
         self.master = tk.Tk()
@@ -56,7 +57,10 @@ class QRCodeGeneratorGUI:
         self.load_image_button.pack(side=tk.LEFT)
         self.load_image_name = tk.Label(self.load_image_frame, text="No image loaded", font=desc_font, bg=input_bg_color,
                                         fg=input_fg_color)
-        self.load_image_name.pack(side=tk.RIGHT, padx=10)
+        self.load_image_name.pack(side=tk.LEFT, padx=10)
+        self.load_image_remove = tk.Button(self.load_image_frame, text="X", font=button_font, command=self.remove_image,
+                                           relief=tk.FLAT, bg=remove_button_bg_color, fg=input_fg_color)
+        self.load_image_remove.pack(side=tk.RIGHT)
 
         # Create the generate button
         self.generate_button = tk.Button(self.master, text="Generate QR Code", font=button_font,
@@ -98,6 +102,10 @@ class QRCodeGeneratorGUI:
         if file_path:
             self.logo_image = Image.open(file_path).convert("RGBA")
             self.load_image_name.config(text=file_path)
+
+    def remove_image(self):
+        self.logo_image = None
+        self.load_image_name.config(text="Image removed")
 
     def generate_qr_code(self):
         """
