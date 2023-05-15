@@ -27,10 +27,13 @@ class QRCodeGeneratorGUI:
         button_bg_color = '#008000'
         remove_button_bg_color = '#FF0000'
 
+        window_width = 800
+        window_height = 875
+
         # Create the window
         self.master = tk.Tk()
         self.master.title("QR Code Generator")
-        self.master.geometry('800x875')
+        self.master.geometry(f'{window_width}x{window_height}')
         self.master.config(bg=bg_color)
 
         # Create the url entry
@@ -56,7 +59,7 @@ class QRCodeGeneratorGUI:
                                            relief=tk.FLAT, bg=button_bg_color, fg=input_fg_color)
         self.load_image_button.pack(side=tk.LEFT)
         self.load_image_name = tk.Label(self.load_image_frame, text="No image loaded", font=desc_font, bg=input_bg_color,
-                                        fg=input_fg_color)
+                                        fg=input_fg_color, wraplength=int(window_width*0.67))
         self.load_image_name.pack(side=tk.LEFT, padx=10)
         self.load_image_remove = tk.Button(self.load_image_frame, text="X", font=button_font, command=self.remove_image,
                                            relief=tk.FLAT, bg=remove_button_bg_color, fg=input_fg_color)
