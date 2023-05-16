@@ -8,7 +8,7 @@ class QRCodeGeneratorGUI:
     """
     GUI for a QR Code Generator\n
     Author: Pedro Henrique Gonçalves Pires\n
-    Date: 15/05/2023\n
+    Date: 15/05/2023 - 16/05/2023\n
     """
     def __init__(self):
         # Variables
