@@ -2,14 +2,16 @@
 
 ***
 
-
 ## Installation / Requirements
+- ### Clone the Project
+  - Terminal >> ``git clone <https_project_link>``
 - ### Python 3.11
   - From: https://www.python.org/downloads/ <br>
   - Set it as default to open .py files
-- ### Install modules inside requirements.txt:
+- ### Install Required Modules:
   - Terminal >> inside the project folder <br> ``pip install -r requirements.txt``
 
+***
 
 ## Usage
 Open the qr_code_generator.py file and run it. <br>
@@ -25,6 +27,7 @@ Open the qr_code_generator.py file and run it. <br>
 (40% the dimensions of the QR Code) <br>
 <img src="https://github.com/PhPires13/qr-code-generator/blob/main/tutorial/logo_qr_code.png?raw=true" alt="Logo QR Code" style="max-height: 400px; width: auto;">
 
+***
 
 ## Authors
 Pedro Henrique Gonçalves Pires
