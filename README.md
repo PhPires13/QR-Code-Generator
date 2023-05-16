@@ -19,11 +19,11 @@ Open the qr_code_generator.py file and run it. <br>
 <img src="https://github.com/PhPires13/qr-code-generator/blob/main/tutorial/initial_screen.png?raw=true" alt="Initial Screen" style="max-height: 400px; width: auto;">
 
 ### Standard QR Code Generation
-#### You've just to type the data or url you want in the field and click in "Generate QR Code"
+#### Just type the data or url you want in the field and click in "Generate QR Code"
 <img src="https://github.com/PhPires13/qr-code-generator/blob/main/tutorial/standard_qr_code.png?raw=true" alt="Standard QR Code" style="max-height: 400px; width: auto;">
 
 ### QR Code with a Logo
-#### You've got just load an image to be the logo in the middle
+#### Load an image to be the logo in the middle, clicking in "Load Image"
 (40% the dimensions of the QR Code) <br>
 <img src="https://github.com/PhPires13/qr-code-generator/blob/main/tutorial/logo_qr_code.png?raw=true" alt="Logo QR Code" style="max-height: 400px; width: auto;">
 
