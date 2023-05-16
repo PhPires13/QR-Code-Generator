@@ -32,6 +32,7 @@ class QRCodeGeneratorGUI:
 
         # Create the window
         self.master = tk.Tk()
+        self.master.protocol("WM_DELETE_WINDOW", self.quit_me)
         self.master.title("QR Code Generator")
         self.master.geometry(f'{window_width}x{window_height}')
         self.master.config(bg=bg_color)
@@ -158,7 +159,6 @@ class QRCodeGeneratorGUI:
                 self.qr_code_image.save(file_path)
 
     def run_app(self):
-        self.master.protocol("WM_DELETE_WINDOW", self.quit_me)
         self.master.mainloop()
 
     def quit_me(self):
